@@ -1,7 +1,7 @@
 /**
  * Quét thư mục Google Drive và ghi toàn bộ file vào một sheet
  * 
- * @param {string} folderId - ID của thư mục Drive cần quét
+ * @param {string} folderId - ID của thư mục Drive
  * @param {string} sheetName - Tên của Sheet để ghi dữ liệu
  */
 function scanDriveFolder(folderId, sheetName) {
@@ -11,7 +11,7 @@ function scanDriveFolder(folderId, sheetName) {
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
 
     if (!sheet) {
-      throw new Error(`Không tìm thấy sheet có tên "${sheetName}"`);
+      throw new Error(`Không tìm thấy sheet "${sheetName}"`);
     }
 
     while (files.hasNext()) {
