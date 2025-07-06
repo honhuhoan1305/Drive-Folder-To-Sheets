@@ -8,7 +8,7 @@
    - Tạo thư mục Drive riêng cho người đó
    - Gọi thêm dòng như:
      ```javascript
-     scanDriveFolder('drive_folder_id_cua_Hoan', 'File_Hoang');
+     scanDriveFolder('drive_folder_id_cua_Hoan', 'File_Hoan');
      ```
 
 📌 Lưu ý: Sheet phải đúng tên, folder phải đúng ID nhé!
